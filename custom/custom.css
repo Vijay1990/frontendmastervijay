@@ -67,20 +67,54 @@ body {
     box-shadow: -6px 0 #488ee2, 6px 0 #488ee2, 0 7px 4px -3px #070708;
 }
 /*experince*/
-.experince{
+.experince,.project,.contact{
     background: #488ee2; 
     display: inline-block;
     width: 100%;
     height: 100%;
 }
-.experince .container{
+.container{
 width: 80%;
 margin: 0 auto;
 color: white;
+padding-top: 30px;
 }
-.experince .container >div{
-    padding-top: 10px;
+.skill-info{
+    padding-top: 15px;
 }
 .experince .container span{
     margin-left: 10px;
 }
+.font-strong{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/*
+ * ==== Losange
+ */
+ .user {   
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    background-image: url('../img/profile1.JPG');
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .intro-about{
+    width: 85%;
+    font-size: 1.1em;
+    font-style: italic;
+    line-height: 1.8;
+  }
+  .clear-both{
+      clear: both;
+  }
+  .intro-text{
+      padding-top: 25px;
+  }
