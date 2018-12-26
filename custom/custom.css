@@ -67,16 +67,20 @@ body {
     box-shadow: -6px 0 #488ee2, 6px 0 #488ee2, 0 7px 4px -3px #070708;
 }
 /*experince*/
-.container{
-    width:80%;
-    display: inlline-block;
+.experince{
+    background: #488ee2; 
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
-.left-align{
-    width: 38%;
-    float: left;
-    border: 1px solid red;
+.experince .container{
+width: 80%;
+margin: 0 auto;
+color: white;
 }
-.right-align{
-    width: 40%;
-    float: right;    
+.experince .container >div{
+    padding-top: 10px;
+}
+.experince .container span{
+    margin-left: 10px;
 }

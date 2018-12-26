@@ -1,5 +1,7 @@
 $(document).ready(function () {
   $('.owl-carousel').owlCarousel({
+    animateOut: 'rollOut',
+    animateIn: 'rollIn',
     items: 1,
     loop: false,
     nav: true,
@@ -66,23 +68,3 @@ function calculateVector(x, y) {
   return new p5.Vector(y - x, -x - y);
 }
 
-/**Charts */
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-  // The type of chart we want to create
-  type: 'horizontalBar',
-
-  // The data for our dataset
-  data: {
-    labels: ["TYPESCRIPT", "CSS", "HTML", 'JAVASCRIPT', "ANGULAR", "NODEJS", "REACT", "PHP"],
-    datasets: [{
-      label: "Technical Competency",
-      backgroundColor: "#488ee2",
-      borderColor: 'white',
-      data: [0, 60, 80, 80, 80, 70, 60, 60, 70, 100],
-    }]
-  },
-
-  // Configuration options go here
-  options: {}
-});
