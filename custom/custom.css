@@ -118,3 +118,9 @@ padding-top: 30px;
   .intro-text{
       padding-top: 25px;
   }
+  .gallery-items{
+    display: flex;
+  }
+  .image-link{
+    padding: 0 15px;
+  }

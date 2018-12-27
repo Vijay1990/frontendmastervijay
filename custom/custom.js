@@ -67,4 +67,18 @@ function draw() {
 function calculateVector(x, y) {
   return new p5.Vector(y - x, -x - y);
 }
+//Gallery View
+$(function(){
+	$('.image-link').viewbox({
+		setTitle: true,
+		margin: 20,
+		resizeDuration: 300,
+		openDuration: 200,
+		closeDuration: 200,
+		closeButton: true,
+		navButtons: true,
+		closeOnSideClick: true,
+		nextOnContentClick: true
+	});
+});
 
