@@ -1,5 +1,7 @@
 $(document).ready(function () {
   $('.owl-carousel').owlCarousel({
+    smartSpeed: 1000,
+    slideSpeed: 3000,
     animateOut: 'rollOut',
     animateIn: 'rollIn',
     items: 1,
@@ -68,17 +70,16 @@ function calculateVector(x, y) {
   return new p5.Vector(y - x, -x - y);
 }
 //Gallery View
-$(function(){
-	$('.image-link').viewbox({
-		setTitle: true,
-		margin: 20,
-		resizeDuration: 300,
-		openDuration: 200,
-		closeDuration: 200,
-		closeButton: true,
-		navButtons: true,
-		closeOnSideClick: true,
-		nextOnContentClick: true
-	});
+$(function () {
+  $('.image-link').viewbox({
+    setTitle: true,
+    resizeDuration: 500,
+    openDuration: 300,
+    closeDuration: 200,
+    closeButton: true,
+    navButtons: true,
+    closeOnSideClick: true,
+    nextOnContentClick: true
+  });
 });
 
