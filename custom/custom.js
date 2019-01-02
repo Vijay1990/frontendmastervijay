@@ -1,8 +1,10 @@
 $(document).ready(function () {
-  $('.owl-carousel').owlCarousel({
-    smartSpeed: 1000,
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    smartSpeed: 3000,
     slideSpeed: 3000,
-    animateOut: 'rollOut',
+    touchDrag: false,
+    mouseDrag: false,
     animateIn: 'rollIn',
     items: 1,
     loop: false,
@@ -10,9 +12,21 @@ $(document).ready(function () {
     dots: false,
     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
   });
-  $('body').on('keyup', function (event) {
 
-    var owl = $(".owl-carousel");
+  owl.on('changed.owl.carousel', function (event) {
+    if (event.item.index === 2) {
+      $('.footer').css('background', '#a20d9e');
+    } else {
+      $('.footer').css('background', '#488ee2');
+    }
+    if (event.item.index === 3) {
+      $('.footer').css('display', 'none');
+    } else {
+      $('.footer').css('display', 'inline-block');
+    }
+  });
+
+  $('body').on('keyup', function (event) {
     owl.owlCarousel();
     // handle cursor keys
     if (event.keyCode == 37) {
