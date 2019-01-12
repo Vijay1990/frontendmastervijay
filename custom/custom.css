@@ -380,12 +380,16 @@ h1:after {
     .testimonials {
         height: 300px;
         overflow-y: scroll;
+        overflow-x: hidden;
     }
     .icon-effect-1a {
         padding-left: 10px;
     }
     .icon-effect>li {
         margin: 4px;
+    }
+    .social-icon {
+        margin-bottom: 10px;
     }
 }
 
@@ -432,5 +436,8 @@ h1:after {
     .icon-effect>li {
         margin: auto;
         margin-right: 20px;
+    }
+    .social-icon {
+        margin-bottom: 0px;
     }
 }
