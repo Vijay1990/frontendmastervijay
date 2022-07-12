@@ -419,10 +419,10 @@ h1:after {
         width: 150px;
         height: 150px;
     }
-    .skill-container, .gallery-items {
+/*     .skill-container, .gallery-items {
         overflow-y: hidden;
         height: auto;
-    }
+    } */
     .award-info {
         font-size: 18px;
     }
@@ -440,4 +440,14 @@ h1:after {
     .social-icon {
         margin-bottom: 0px;
     }
+}
+
+.award-left-container {
+    display: inline-block;
+    width: 50%;
+}
+
+.award-right-container {
+    display: inline-block;
+    width: 49%;
 }
